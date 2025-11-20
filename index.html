@@ -1,44 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mood Journal </title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amor al Café</title>
+
+  <!-- Vincular CSS -->
+  <link rel="stylesheet" href="estilos.css" />
+
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
 </head>
 
 <body>
+  <!-- ====== HEADER ====== -->
   <header>
-    <h1>Mood Journal :) </h1>
-    <p>¡Hola! Bienvenido a tu Mood Journal.
-Tomate un momento para reconocer cómo te sentís hoy y registrá tu estado de ánimo. ¡Es tu espacio para conocerte mejor!</p>
-
+    <nav>
+      <h1>☕ Amor al Café</h1>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#tipos">Tipos</a></li>
+        <li><a href="#metodos">Métodos</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <section id="selector">
-      <h2>¿Cómo te sentís hoy?</h2>
-      <div class="moods">
-        <button class="mood">😀</button>
-        <button class="mood">😐</button>
-        <button class="mood">😢</button>
-        <button class="mood">😡</button>
-        <button class="mood">😴</button>
-      </div>
-    </section>
+  <!-- ====== SECCIÓN INICIO ====== -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h2>Bienvenido al mundo del café</h2>
+      <p>Descubrí la historia, los aromas y los secretos detrás de cada taza.  
+      Un espacio para los verdaderos amantes del café.</p>
+      <a href="#tipos" class="btn">Explorar</a>
+    </div>
+  </section>
 
-    <section id="historial">
-      <h2>Tu historial emocional</h2>
-      <div id="lista"></div>
-      <button id="limpiar">Limpiar historial</button>
-    </section>
-  </main>
+  <!-- ====== TIPOS DE CAFÉ ====== -->
+  <section id="tipos">
+    <h2>Tipos de café</h2>
+    <div class="grid">
+      <article>
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Café arábica">
+        <h3>Arábica</h3>
+        <p>El más popular por su sabor suave y aroma dulce. Representa el 60% de la producción mundial.</p>
+      </article>
+      <article>
+        <img src="https://i.pinimg.com/1200x/9e/f8/c3/9ef8c3a478490783a8d8004b261527ba.jpg" alt="Café robusta">
+        <h3>Robusta</h3>
+        <p>De sabor más fuerte y amargo, contiene más cafeína. Ideal para los que buscan intensidad.</p>
+      </article>
+    </div>
+  </section>
 
+  <!-- ====== MÉTODOS DE PREPARACIÓN ====== -->
+  <section id="metodos">
+    <h2>Métodos de preparación</h2>
+    <div class="grid">
+      <article>
+        <img src="https://i.pinimg.com/736x/bb/46/2c/bb462c909b8bc7588e5b749da35d1b57.jpg" alt="Prensa francesa">
+        <h3>Prensa francesa</h3>
+        <p>Un método clásico que resalta los aceites naturales del café. Sabor intenso y cuerpo completo.</p>
+      </article>
+      <article>
+        <img src="https://i.pinimg.com/736x/2f/58/ba/2f58ba55edc38d10b3f9076e5c0f8cc2.jpg" alt="Café espresso">
+        <h3>Espresso</h3>
+        <p>Base de muchas bebidas. Alta presión, poco tiempo y un sabor concentrado y cremoso.</p>
+      </article>
+      <article>
+        <img src="https://i.pinimg.com/1200x/c6/eb/6a/c6eb6acbf0ae51fe861fccdd88f8ffd1.jpg" alt="Café moka">
+        <h3>Moka italiana</h3>
+        <p>Ideal para el hogar. Produce un café fuerte con notas amargas y una textura densa.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ====== BLOG ====== -->
+  <section id="blog">
+    <h2>Blog</h2>
+    <div class="blog-container">
+      <article>
+        <h3>Cómo preparar un café perfecto en casa</h3>
+        <p>Consejos básicos sobre molienda, temperatura y proporciones para lograr la taza ideal.</p>
+      </article>
+      <article>
+        <h3>Recetas con café</h3>
+        <p>Descubrí recetas como el affogato, el café dalgona o el frappé casero.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ====== CONTACTO ====== -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tenés dudas o querés colaborar con Amor al Café? Escribinos:</p>
+
+    <form action="#" method="post">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo electrónico" required>
+      <textarea name="mensaje" rows="5" placeholder="Tu mensaje..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
   <footer>
-    <p>© 2025 Mood Journal - Proyecto de Diseño Web</p>
+    <p>© 2025 Amor al Café | Diseño Web</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
+
